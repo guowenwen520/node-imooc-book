@@ -6,17 +6,17 @@ let dbHost
 let dbUser
 let dbPwd
 if (env === 'dev') {
-  resUrl = 'http://192.168.31.243:8081'
-  mp3FilePath = '/Users/sam/Desktop/resource/mp3'
+  resUrl = 'http://127.0.0.1:8081'
+  mp3FilePath = '/e/book_resource/book/mp3'
   dbHost = 'localhost'
   dbUser = 'root'
   dbPwd = '123456'
 } else if (env === 'prod') {
-  resUrl = 'http://106.15.231.180'
+  resUrl = 'http://39.105.60.100'
   mp3FilePath = '/root/nginx/upload/mp3'
-  dbHost = '106.15.231.180'
+  dbHost = '39.105.60.100'
   dbUser = 'root'
-  dbPwd = 'Abcd123456.'
+  dbPwd = '123456'
 }
 
 const category = [
